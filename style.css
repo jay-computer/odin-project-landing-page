@@ -7,6 +7,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    height: 100vh;
+    background-color: #1F2937;
 }
 ul {
     list-style-type: none; 
@@ -23,13 +25,6 @@ a {
     font-size: 18px;
 }
 
-.header-pic {
-    height: 52px;
-    width: 288px;
-    object-fit: cover;
-    object-position: 35% 80%;
-    border-radius: 5px;
-}
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +32,15 @@ a {
     padding: 8px;
     background-color: #1F2937;
 }
+
+.header-pic {
+    height: 52px;
+    width: 288px;
+    object-fit: cover;
+    object-position: 35% 80%;
+    border-radius: 5px;
+}
+
 
 .mid-1 {
     display: flex;
@@ -64,14 +68,21 @@ a {
     margin-bottom: 4px;
 }
 
-.header-sign {
+button{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
     border-radius: 5px;
-    flex-grow: 0;
-    width: 25%;
-    align-self: flex-start;
+    max-width: 75px;
+    min-width: 50px;
     color: #E5E7EB;
     background-color: #3882F6;
-    border: 0;
+}
+
+.header-sign {
+    flex-grow: 0;
+    align-self: flex-start;
+    
 }
 
 .header2-pic {
@@ -85,6 +96,8 @@ a {
 .mid-wrapped {
     display: flex;
     flex-direction: row;
+    background-color: alicebluegi;
+    margin-bottom: 0;
     
 }
 
@@ -135,23 +148,85 @@ a {
     align-items: center;
     flex-direction: column;
 
-    background-color: #3882F6;
+    background-color: #E5E7EB;
     width: 50vw;
     padding-left: 16px;
     padding-right: 16px;
+
+    margin-bottom: 0;
 }
 .testimony {
-
-
-
     
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
     text-align: justify;
+    margin-bottom: 8px;
 }
 
 .name {
     align-self: flex-end;
+    margin-bottom: 8px;
+}
+
+/****** ad *****/
+.bottom-quarter {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: 0;
+
+    flex: 1;
+}
+.ad-section {
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+
+}
+
+
+.ad-descrip {
+    display:flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding: 8px;
+    
+}
+
+.ad-head, .ad-body {
+    color: #F9FAF8;
+}
+
+.ad-head {
+    font-size: 24px;
+    font-weight: 950;
+    margin-bottom: 0px;
+}
+
+.ad-body {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ad-sign {
+    flex-grow: 0;
+    margin-right: 8px;
+}
+
+/************* footer *************/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
 }
