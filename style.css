@@ -4,6 +4,9 @@
 
 body {
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 ul {
     list-style-type: none; 
@@ -21,10 +24,11 @@ a {
 }
 
 .header-pic {
-    height: 72px;
+    height: 52px;
     width: 288px;
     object-fit: cover;
-    object-position: 25% 85%;
+    object-position: 35% 80%;
+    border-radius: 5px;
 }
 .header {
     display: flex;
@@ -74,6 +78,36 @@ a {
     height: 200px;
     width: 400px;
     object-fit: cover;
-    object-position: 40px 45%;
+    border-radius: 5px;
 }
 
+/************************ MID SECTION *********************/
+.mid-2 {
+    margin: 8px;
+}
+.mid-2-header {
+    font-size: 36px;
+    font-weight: 950;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.midimgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+.mid-2-img-one, .mid-2-img-two, .mid-2-img-three, .mid-2-img-four {
+    display: flex;
+    flex-direction: column;
+}
+.mid-2-jpg1, .mid-2-jpg2, .mid-2-jpg3, .mid-2-jpg4 {
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+    object-position: 35% 80%;
+    border-radius: 5px;
+}
