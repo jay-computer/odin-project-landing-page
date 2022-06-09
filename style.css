@@ -82,9 +82,19 @@ a {
 }
 
 /************************ MID SECTION *********************/
+.mid-wrapped {
+    display: flex;
+    flex-direction: row;
+    
+}
+
 .mid-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
     margin: 8px;
 }
+
 .mid-2-header {
     font-size: 36px;
     font-weight: 950;
@@ -92,22 +102,56 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
 }
 .midimgs {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    gap: 16px;
+    gap: 8px;
 }
-.mid-2-img-one, .mid-2-img-two, .mid-2-img-three, .mid-2-img-four {
+.mid-2-img {
     display: flex;
     flex-direction: column;
+    max-width: 125px;
 }
-.mid-2-jpg1, .mid-2-jpg2, .mid-2-jpg3, .mid-2-jpg4 {
+.mid-2-jpg {
     height: 125px;
     width: 125px;
     object-fit: cover;
     object-position: 35% 80%;
     border-radius: 5px;
+}
+.food-desc {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+/***** testimony section ****/
+.mid-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #3882F6;
+    width: 50vw;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.testimony {
+
+
+
+    
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    text-align: justify;
+}
+
+.name {
+    align-self: flex-end;
 }
